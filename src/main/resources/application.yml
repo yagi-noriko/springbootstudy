@@ -1,0 +1,9 @@
+server:
+  servlet:
+    context-path: /springbootstudy
+
+spring:
+  messages:
+    basename: i18n/messages
+    encodeing: UTF-8
+
