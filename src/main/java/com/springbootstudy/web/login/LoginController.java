@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.springbootstudy.common.bean.LoginInfo;
 import com.springbootstudy.common.constant.SessionKey;
+import com.springbootstudy.repository.user.User;
 
 import jakarta.servlet.http.HttpSession;
 
@@ -28,9 +29,12 @@ public class LoginController {
 
 	private HttpSession session;
 
+	private final LoginService service;
+
 	@Autowired
-	public LoginController(HttpSession session) {
+	public LoginController(HttpSession session, LoginService service) {
 		this.session = session;
+		this.service = service;
 	}
 
 	/**
@@ -62,6 +66,16 @@ public class LoginController {
 
 		// 入力エラー
 		if (bindingResult.hasErrors()) {
+			return "login/login";
+		}
+
+		User user = service.findUserByLoginId(form.getLoginId());
+		if (user == null) {
+			bindingResult.rejectValue("loginId", "message.login.invalid.login-id.notfound", "not found");
+			return "login/login";
+		}
+		if (!user.getPassword().equals(form.getPassword())) {
+			bindingResult.rejectValue("password", "message.login.invalid.password.notequal", "invalid password");
 			return "login/login";
 		}
 
