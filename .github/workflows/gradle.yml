@@ -50,6 +50,7 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: build/reports/tests/test
+        destination_dir: test
         publish_branch: gh-pages
         commit_message: "Deploy test report from GitHub Actions"
         keep_files: true
