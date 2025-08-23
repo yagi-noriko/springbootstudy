@@ -42,7 +42,7 @@ public class LoginControllerTests {
 		MultiValueMap<String, String> params = new LinkedMultiValueMap<>();
 
 		MvcTestResultAssert result = mvc.post().uri("/login").params(params).exchange().assertThat();
-		result.hasStatus3xxRedirection();
-		result.hasRedirectedUrl("/top");
+		result.hasStatusOk();
+		result.hasContentType(new MediaType(MediaType.TEXT_HTML, StandardCharsets.UTF_8));
 	}
 }
