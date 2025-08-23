@@ -55,6 +55,7 @@ loadScripts(document, 'script');</script>
 <li><a href="com/springbootstudy/common/constant/package-tree.html">com.springbootstudy.common.constant</a>, </li>
 <li><a href="com/springbootstudy/common/exception/package-tree.html">com.springbootstudy.common.exception</a>, </li>
 <li><a href="com/springbootstudy/common/interceptor/package-tree.html">com.springbootstudy.common.interceptor</a>, </li>
+<li><a href="com/springbootstudy/repository/user/package-tree.html">com.springbootstudy.repository.user</a>, </li>
 <li><a href="com/springbootstudy/web/package-tree.html">com.springbootstudy.web</a>, </li>
 <li><a href="com/springbootstudy/web/login/package-tree.html">com.springbootstudy.web.login</a>, </li>
 <li><a href="com/springbootstudy/web/top/package-tree.html">com.springbootstudy.web.top</a></li>
@@ -71,6 +72,7 @@ loadScripts(document, 'script');</script>
 <li class="circle">com.springbootstudy.web.login.<a href="com/springbootstudy/web/login/LoginController.html" class="type-name-link" title="class in com.springbootstudy.web.login">LoginController</a></li>
 <li class="circle">com.springbootstudy.web.login.<a href="com/springbootstudy/web/login/LoginForm.html" class="type-name-link" title="class in com.springbootstudy.web.login">LoginForm</a></li>
 <li class="circle">com.springbootstudy.common.bean.<a href="com/springbootstudy/common/bean/LoginInfo.html" class="type-name-link" title="class in com.springbootstudy.common.bean">LoginInfo</a></li>
+<li class="circle">com.springbootstudy.web.login.<a href="com/springbootstudy/web/login/LoginService.html" class="type-name-link" title="class in com.springbootstudy.web.login">LoginService</a></li>
 <li class="circle">java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Throwable.html" class="type-name-link external-link" title="class or interface in java.lang">Throwable</a> (implements java.io.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Serializable.html" title="class or interface in java.io" class="external-link">Serializable</a>)
 <ul>
 <li class="circle">java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Exception.html" class="type-name-link external-link" title="class or interface in java.lang">Exception</a>
@@ -87,7 +89,52 @@ loadScripts(document, 'script');</script>
 </ul>
 </li>
 <li class="circle">com.springbootstudy.web.top.<a href="com/springbootstudy/web/top/TopController.html" class="type-name-link" title="class in com.springbootstudy.web.top">TopController</a></li>
+<li class="circle">com.springbootstudy.repository.user.<a href="com/springbootstudy/repository/user/User.html" class="type-name-link" title="class in com.springbootstudy.repository.user">User</a></li>
 <li class="circle">com.springbootstudy.<a href="com/springbootstudy/WebMvcConfig.html" class="type-name-link" title="class in com.springbootstudy">WebMvcConfig</a> (implements org.springframework.web.servlet.config.annotation.WebMvcConfigurer)</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="hierarchy">
+<h2 title="Interface Hierarchy">Interface Hierarchy</h2>
+<ul>
+<li class="circle">org.springframework.data.repository.query.QueryByExampleExecutor&lt;T&gt;
+<ul>
+<li class="circle">org.springframework.data.jpa.repository.JpaRepository&lt;T,<wbr>ID&gt; (also extends org.springframework.data.repository.ListCrudRepository&lt;T,<wbr>ID&gt;, org.springframework.data.repository.ListPagingAndSortingRepository&lt;T,<wbr>ID&gt;)
+<ul>
+<li class="circle">com.springbootstudy.repository.user.<a href="com/springbootstudy/repository/user/UserRepository.html" class="type-name-link" title="interface in com.springbootstudy.repository.user">UserRepository</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="circle">org.springframework.data.repository.Repository&lt;T,<wbr>ID&gt;
+<ul>
+<li class="circle">org.springframework.data.repository.CrudRepository&lt;T,<wbr>ID&gt;
+<ul>
+<li class="circle">org.springframework.data.repository.ListCrudRepository&lt;T,<wbr>ID&gt;
+<ul>
+<li class="circle">org.springframework.data.jpa.repository.JpaRepository&lt;T,<wbr>ID&gt; (also extends org.springframework.data.repository.ListPagingAndSortingRepository&lt;T,<wbr>ID&gt;, org.springframework.data.repository.query.QueryByExampleExecutor&lt;T&gt;)
+<ul>
+<li class="circle">com.springbootstudy.repository.user.<a href="com/springbootstudy/repository/user/UserRepository.html" class="type-name-link" title="interface in com.springbootstudy.repository.user">UserRepository</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="circle">org.springframework.data.repository.PagingAndSortingRepository&lt;T,<wbr>ID&gt;
+<ul>
+<li class="circle">org.springframework.data.repository.ListPagingAndSortingRepository&lt;T,<wbr>ID&gt;
+<ul>
+<li class="circle">org.springframework.data.jpa.repository.JpaRepository&lt;T,<wbr>ID&gt; (also extends org.springframework.data.repository.ListCrudRepository&lt;T,<wbr>ID&gt;, org.springframework.data.repository.query.QueryByExampleExecutor&lt;T&gt;)
+<ul>
+<li class="circle">com.springbootstudy.repository.user.<a href="com/springbootstudy/repository/user/UserRepository.html" class="type-name-link" title="interface in com.springbootstudy.repository.user">UserRepository</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
