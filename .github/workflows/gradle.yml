@@ -52,6 +52,7 @@ jobs:
         publish_dir: build/reports/tests/test
         publish_branch: gh-pages
         commit_message: "Deploy test report from GitHub Actions"
+        keep_files: true
 
     - name: Build with Gradle Wrapper
       run: ./gradlew build
@@ -73,6 +74,7 @@ jobs:
         destination_dir: javadoc
         publish_branch: gh-pages
         commit_message: "Deploy JavaDoc from GitHub Actions"
+        keep_files: true
 
   dependency-submission:
 
