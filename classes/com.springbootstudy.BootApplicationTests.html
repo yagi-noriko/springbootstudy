@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.778s</div>
+<div class="counter">0.851s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">contextLoads()</td>
-<td class="success">0.778s</td>
+<td class="success">0.851s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,8 +87,8 @@
 <div class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>04:47:45.483 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.springbootstudy.BootApplicationTests]: BootApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-04:47:45.579 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.springbootstudy.BootApplication for test class com.springbootstudy.BootApplicationTests
+<pre>04:52:00.102 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.springbootstudy.BootApplicationTests]: BootApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+04:52:00.190 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.springbootstudy.BootApplication for test class com.springbootstudy.BootApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -97,70 +97,70 @@
   '  |____| .__|_| |_|_| |_\__, | / / / /
  =========|_|==============|___/=/_/_/_/
 
+04:52:00.699 [background-preinit] DEBUG org.jboss.logging Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
  :: Spring Boot ::                (v3.4.4)
 
-04:47:46.059 [background-preinit] DEBUG org.jboss.logging Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
-04:47:46.061 [background-preinit] INFO  org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.2.Final
-04:47:46.066 [background-preinit] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser Trying to load META-INF/validation.xml for XML based Validator configuration.
-04:47:46.066 [background-preinit] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper Trying to load META-INF/validation.xml via TCCL
-04:47:46.067 [background-preinit] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper Trying to load META-INF/validation.xml via Hibernate Validator's class loader
-04:47:46.067 [background-preinit] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser No META-INF/validation.xml found. Using annotation based configuration only.
-04:47:46.070 [background-preinit] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers Cannot find jakarta.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
-04:47:46.089 [background-preinit] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator Loaded expression factory via original TCCL
-04:47:46.094 [Test worker] INFO  com.springbootstudy.BootApplicationTests Starting BootApplicationTests using Java 17.0.16 with PID 2425 (started by runner in /home/runner/work/springbootstudy/springbootstudy)
-04:47:46.095 [Test worker] DEBUG com.springbootstudy.BootApplicationTests Running with Spring Boot v3.4.4, Spring v6.2.5
-04:47:46.096 [Test worker] INFO  com.springbootstudy.BootApplicationTests No active profile set, falling back to 1 default profile: &quot;default&quot;
-04:47:46.096 [Test worker] DEBUG org.springframework.boot.SpringApplication Loading source class com.springbootstudy.BootApplication
-04:47:46.122 [Test worker] DEBUG org.springframework.web.context.support.GenericWebApplicationContext Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2125ad3
-04:47:46.191 [Test worker] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner Identified candidate component class: file [/home/runner/work/springbootstudy/springbootstudy/build/classes/java/main/com/springbootstudy/WebMvcConfig.class]
-04:47:46.196 [background-preinit] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
-04:47:46.200 [background-preinit] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
-04:47:46.200 [background-preinit] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
-04:47:46.201 [background-preinit] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
-04:47:46.201 [background-preinit] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
-04:47:46.202 [background-preinit] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
-04:47:46.202 [Test worker] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner Identified candidate component class: file [/home/runner/work/springbootstudy/springbootstudy/build/classes/java/main/com/springbootstudy/web/ApplicationControllerAdvice.class]
-04:47:46.210 [Test worker] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner Identified candidate component class: file [/home/runner/work/springbootstudy/springbootstudy/build/classes/java/main/com/springbootstudy/web/login/LoginController.class]
-04:47:46.212 [Test worker] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner Identified candidate component class: file [/home/runner/work/springbootstudy/springbootstudy/build/classes/java/main/com/springbootstudy/web/top/TopController.class]
-04:47:46.842 [Test worker] DEBUG org.springframework.ui.context.support.UiApplicationContextUtils Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@2d0b05]
-04:47:46.961 [Test worker] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator Loaded expression factory via original TCCL
-04:47:46.963 [Test worker] DEBUG org.hibernate.validator.internal.engine.AbstractConfigurationImpl Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
-04:47:46.964 [Test worker] DEBUG org.hibernate.validator.internal.engine.AbstractConfigurationImpl Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
-04:47:46.965 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser Trying to load META-INF/validation.xml for XML based Validator configuration.
-04:47:46.965 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper Trying to load META-INF/validation.xml via user class loader
-04:47:46.966 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper Trying to load META-INF/validation.xml via TCCL
-04:47:46.966 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper Trying to load META-INF/validation.xml via Hibernate Validator's class loader
-04:47:46.966 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser No META-INF/validation.xml found. Using annotation based configuration only.
-04:47:46.967 [Test worker] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers Cannot find jakarta.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
-04:47:46.968 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
-04:47:46.969 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
-04:47:46.969 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
-04:47:46.969 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
-04:47:46.969 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
-04:47:46.970 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
-04:47:46.991 [Test worker] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page: class path resource [static/index.html]
-04:47:47.031 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 
+04:52:00.701 [background-preinit] INFO  org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 8.0.2.Final
+04:52:00.706 [background-preinit] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser Trying to load META-INF/validation.xml for XML based Validator configuration.
+04:52:00.706 [background-preinit] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper Trying to load META-INF/validation.xml via TCCL
+04:52:00.707 [background-preinit] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+04:52:00.708 [background-preinit] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser No META-INF/validation.xml found. Using annotation based configuration only.
+04:52:00.712 [background-preinit] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers Cannot find jakarta.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+04:52:00.732 [background-preinit] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator Loaded expression factory via original TCCL
+04:52:00.753 [Test worker] INFO  com.springbootstudy.BootApplicationTests Starting BootApplicationTests using Java 17.0.16 with PID 2290 (started by runner in /home/runner/work/springbootstudy/springbootstudy)
+04:52:00.753 [Test worker] DEBUG com.springbootstudy.BootApplicationTests Running with Spring Boot v3.4.4, Spring v6.2.5
+04:52:00.754 [Test worker] INFO  com.springbootstudy.BootApplicationTests No active profile set, falling back to 1 default profile: &quot;default&quot;
+04:52:00.755 [Test worker] DEBUG org.springframework.boot.SpringApplication Loading source class com.springbootstudy.BootApplication
+04:52:00.781 [Test worker] DEBUG org.springframework.web.context.support.GenericWebApplicationContext Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2125ad3
+04:52:00.849 [background-preinit] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+04:52:00.854 [background-preinit] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+04:52:00.854 [background-preinit] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+04:52:00.854 [background-preinit] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+04:52:00.854 [background-preinit] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+04:52:00.855 [background-preinit] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+04:52:00.862 [Test worker] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner Identified candidate component class: file [/home/runner/work/springbootstudy/springbootstudy/build/classes/java/main/com/springbootstudy/WebMvcConfig.class]
+04:52:00.870 [Test worker] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner Identified candidate component class: file [/home/runner/work/springbootstudy/springbootstudy/build/classes/java/main/com/springbootstudy/web/ApplicationControllerAdvice.class]
+04:52:00.877 [Test worker] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner Identified candidate component class: file [/home/runner/work/springbootstudy/springbootstudy/build/classes/java/main/com/springbootstudy/web/login/LoginController.class]
+04:52:00.878 [Test worker] DEBUG org.springframework.context.annotation.ClassPathBeanDefinitionScanner Identified candidate component class: file [/home/runner/work/springbootstudy/springbootstudy/build/classes/java/main/com/springbootstudy/web/top/TopController.class]
+04:52:01.483 [Test worker] DEBUG org.springframework.ui.context.support.UiApplicationContextUtils Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@21bd128b]
+04:52:01.606 [Test worker] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator Loaded expression factory via original TCCL
+04:52:01.609 [Test worker] DEBUG org.hibernate.validator.internal.engine.AbstractConfigurationImpl Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+04:52:01.609 [Test worker] DEBUG org.hibernate.validator.internal.engine.AbstractConfigurationImpl Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+04:52:01.610 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser Trying to load META-INF/validation.xml for XML based Validator configuration.
+04:52:01.611 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper Trying to load META-INF/validation.xml via user class loader
+04:52:01.611 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper Trying to load META-INF/validation.xml via TCCL
+04:52:01.611 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+04:52:01.611 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser No META-INF/validation.xml found. Using annotation based configuration only.
+04:52:01.612 [Test worker] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers Cannot find jakarta.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+04:52:01.613 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+04:52:01.614 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+04:52:01.614 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+04:52:01.614 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+04:52:01.614 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+04:52:01.614 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+04:52:01.637 [Test worker] INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page: class path resource [static/index.html]
+04:52:01.683 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 
 	c.s.w.l.LoginController:
 	{GET [/login]}: show(Model)
 	{POST [/login]}: login(Model,LoginForm,BindingResult)
-04:47:47.037 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 
+04:52:01.690 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 
 	c.s.w.t.TopController:
 	{GET [/top]}: show(Model)
-04:47:47.041 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 
+04:52:01.694 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 
 	o.s.b.a.w.s.e.BasicErrorController:
 	{ [/error]}: error(HttpServletRequest)
 	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
-04:47:47.046 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping 5 mappings in 'requestMappingHandlerMapping'
-04:47:47.051 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 'beanNameHandlerMapping' {}
-04:47:47.068 [Test worker] DEBUG org.springframework.boot.autoconfigure.AutoConfigurationPackages @EnableAutoConfiguration was declared on a class in the package 'com.springbootstudy'. Automatic @Repository and @Entity scanning is enabled.
-04:47:47.099 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
-04:47:47.110 [Test worker] DEBUG org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
-04:47:47.120 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-04:47:47.190 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-04:47:47.243 [Test worker] DEBUG org.springframework.context.support.DefaultLifecycleProcessor Starting beans in phase -2147483647
-04:47:47.243 [Test worker] DEBUG org.springframework.context.support.DefaultLifecycleProcessor Successfully started bean 'springBootLoggingLifecycle'
-04:47:47.243 [Test worker] DEBUG org.springframework.context.support.DefaultLifecycleProcessor Starting beans in phase 1073741823
-04:47:47.259 [Test worker] DEBUG org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger 
+04:52:01.700 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping 5 mappings in 'requestMappingHandlerMapping'
+04:52:01.705 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 'beanNameHandlerMapping' {}
+04:52:01.723 [Test worker] DEBUG org.springframework.boot.autoconfigure.AutoConfigurationPackages @EnableAutoConfiguration was declared on a class in the package 'com.springbootstudy'. Automatic @Repository and @Entity scanning is enabled.
+04:52:01.760 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+04:52:01.771 [Test worker] DEBUG org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+04:52:01.780 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+04:52:01.841 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+04:52:01.901 [Test worker] DEBUG org.springframework.context.support.DefaultLifecycleProcessor Starting beans in phase -2147483647
+04:52:01.902 [Test worker] DEBUG org.springframework.context.support.DefaultLifecycleProcessor Successfully started bean 'springBootLoggingLifecycle'
+04:52:01.902 [Test worker] DEBUG org.springframework.context.support.DefaultLifecycleProcessor Starting beans in phase 1073741823
+04:52:01.918 [Test worker] DEBUG org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger 
 
 
 ============================
@@ -573,7 +573,7 @@ Negative matches:
 
    ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration:
       Did not match:
-         - ErrorTemplate Missing found template from org.springframework.boot.autoconfigure.thymeleaf.ThymeleafTemplateAvailabilityProvider@1e58512c (ErrorMvcAutoConfiguration.ErrorTemplateMissingCondition)
+         - ErrorTemplate Missing found template from org.springframework.boot.autoconfigure.thymeleaf.ThymeleafTemplateAvailabilityProvider@17f2dd85 (ErrorMvcAutoConfiguration.ErrorTemplateMissingCondition)
       Matched:
          - @ConditionalOnProperty (server.error.whitelabel.enabled) matched (OnPropertyCondition)
 
@@ -1139,32 +1139,32 @@ Unconditional classes:
 
 
 
-04:47:47.310 [Test worker] INFO  com.springbootstudy.BootApplicationTests Started BootApplicationTests in 1.581 seconds (process running for 2.514)
-04:47:47.311 [Test worker] DEBUG org.springframework.boot.availability.ApplicationAvailabilityBean Application availability state LivenessState changed to CORRECT
-04:47:47.316 [Test worker] DEBUG org.springframework.boot.availability.ApplicationAvailabilityBean Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
-04:47:47.318 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@b768a65 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1, failureCount = 0]
-04:47:47.323 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@b768a65 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1, failureCount = 0]
-04:47:47.323 [Test worker] DEBUG org.springframework.test.context.web.ServletTestExecutionListener Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class com.springbootstudy.BootApplicationTests
-04:47:47.341 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener Performing dependency injection for test class com.springbootstudy.BootApplicationTests
-04:47:47.341 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@b768a65 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1, failureCount = 0]
-04:47:47.342 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@b768a65 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1, failureCount = 0]
-04:47:47.348 [Test worker] DEBUG org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener Before test method: class [BootApplicationTests], method [contextLoads], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
-04:47:47.352 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@b768a65 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1, failureCount = 0]
-04:47:47.352 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@b768a65 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1, failureCount = 0]
-04:47:48.065 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@b768a65 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1, failureCount = 0]
-04:47:48.068 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@b768a65 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1, failureCount = 0]
-04:47:48.112 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@b768a65 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1, failureCount = 0]
-04:47:48.113 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@b768a65 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1, failureCount = 0]
-04:47:48.114 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@b768a65 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1, failureCount = 0]
-04:47:48.115 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@b768a65 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1, failureCount = 0]
-04:47:48.115 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@b768a65 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1, failureCount = 0]
-04:47:48.116 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@b768a65 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1, failureCount = 0]
-04:47:48.117 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@b768a65 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 14, missCount = 1, failureCount = 0]
-04:47:48.117 [Test worker] DEBUG org.springframework.test.context.support.DirtiesContextTestExecutionListener After test method: class [BootApplicationTests], method [contextLoads], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
-04:47:48.117 [Test worker] DEBUG org.springframework.test.context.web.ServletTestExecutionListener Resetting RequestContextHolder for test class com.springbootstudy.BootApplicationTests
-04:47:48.125 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@b768a65 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 15, missCount = 1, failureCount = 0]
-04:47:48.125 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@b768a65 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 16, missCount = 1, failureCount = 0]
-04:47:48.125 [Test worker] DEBUG org.springframework.test.context.support.DirtiesContextTestExecutionListener After test class: class [BootApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+04:52:01.965 [Test worker] INFO  com.springbootstudy.BootApplicationTests Started BootApplicationTests in 1.629 seconds (process running for 2.558)
+04:52:01.967 [Test worker] DEBUG org.springframework.boot.availability.ApplicationAvailabilityBean Application availability state LivenessState changed to CORRECT
+04:52:01.969 [Test worker] DEBUG org.springframework.boot.availability.ApplicationAvailabilityBean Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+04:52:01.971 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@5287ba5f size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1, failureCount = 0]
+04:52:01.976 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@5287ba5f size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1, failureCount = 0]
+04:52:01.976 [Test worker] DEBUG org.springframework.test.context.web.ServletTestExecutionListener Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test class com.springbootstudy.BootApplicationTests
+04:52:01.984 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener Performing dependency injection for test class com.springbootstudy.BootApplicationTests
+04:52:01.985 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@5287ba5f size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1, failureCount = 0]
+04:52:01.986 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@5287ba5f size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1, failureCount = 0]
+04:52:01.991 [Test worker] DEBUG org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener Before test method: class [BootApplicationTests], method [contextLoads], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+04:52:01.992 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@5287ba5f size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1, failureCount = 0]
+04:52:01.992 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@5287ba5f size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1, failureCount = 0]
+04:52:02.779 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@5287ba5f size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1, failureCount = 0]
+04:52:02.783 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@5287ba5f size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1, failureCount = 0]
+04:52:02.826 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@5287ba5f size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1, failureCount = 0]
+04:52:02.828 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@5287ba5f size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1, failureCount = 0]
+04:52:02.829 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@5287ba5f size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1, failureCount = 0]
+04:52:02.830 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@5287ba5f size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1, failureCount = 0]
+04:52:02.830 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@5287ba5f size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1, failureCount = 0]
+04:52:02.831 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@5287ba5f size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1, failureCount = 0]
+04:52:02.832 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@5287ba5f size = 1, maxSize = 32, parentContextCount = 0, hitCount = 14, missCount = 1, failureCount = 0]
+04:52:02.833 [Test worker] DEBUG org.springframework.test.context.support.DirtiesContextTestExecutionListener After test method: class [BootApplicationTests], method [contextLoads], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+04:52:02.833 [Test worker] DEBUG org.springframework.test.context.web.ServletTestExecutionListener Resetting RequestContextHolder for test class com.springbootstudy.BootApplicationTests
+04:52:02.841 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@5287ba5f size = 1, maxSize = 32, parentContextCount = 0, hitCount = 15, missCount = 1, failureCount = 0]
+04:52:02.842 [Test worker] DEBUG org.springframework.test.context.cache Spring test ApplicationContext cache statistics: [DefaultContextCache@5287ba5f size = 1, maxSize = 32, parentContextCount = 0, hitCount = 16, missCount = 1, failureCount = 0]
+04:52:02.842 [Test worker] DEBUG org.springframework.test.context.support.DirtiesContextTestExecutionListener After test class: class [BootApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
 </pre>
 </span>
 </div>
@@ -1176,7 +1176,7 @@ Unconditional classes:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 8.14</a> at Aug 23, 2025, 4:47:49 AM</p>
+<a href="https://www.gradle.org">Gradle 8.14</a> at Aug 23, 2025, 4:52:03 AM</p>
 </div>
 </div>
 </body>
