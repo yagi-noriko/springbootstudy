@@ -3,6 +3,9 @@ package com.springbootstudy.web.login;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 
+/**
+ * ログインページの入力フォーム
+ */
 public class LoginForm {
 
 	@NotBlank
