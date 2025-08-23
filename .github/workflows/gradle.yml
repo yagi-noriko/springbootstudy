@@ -62,6 +62,18 @@ jobs:
         name: springbootstudy-jar
         path: build/libs/*.jar
 
+    - name: Generate JavaDoc
+      run: ./gradlew javadoc
+
+    - name: Deploy JavaDoc to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: build/docs/javadoc
+        destination_dir: javadoc
+        publish_branch: gh-pages
+        commit_message: "Deploy JavaDoc from GitHub Actions"
+
   dependency-submission:
 
     runs-on: ubuntu-latest
