@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  test-build-download:
 
     runs-on: ubuntu-latest
     permissions:
@@ -43,6 +43,15 @@ jobs:
       with:
         name: junit-html-report
         path: build/reports/tests/test
+
+    - name: Deploy HTML test report to GitHub Pages
+      if: always()
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: build/reports/tests/test
+        publish_branch: gh-pages
+        commit_message: "Deploy test report from GitHub Actions"
 
     - name: Build with Gradle Wrapper
       run: ./gradlew build
