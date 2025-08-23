@@ -1,7 +1,8 @@
 package com.springbootstudy.common.exception;
 
 /**
- * 未ログインでログインが必要なページにアクセスしようとした場合や、アクセス権のないページにアクセスしたときのエラー
+ * アクセス不正を示すException<br>
+ * 例：未ログインでログインが必要なページにアクセスしようとした、アクセス権のないページにアクセスした
  */
 public class IllegalUserAccessException extends StudyCommonException {
 

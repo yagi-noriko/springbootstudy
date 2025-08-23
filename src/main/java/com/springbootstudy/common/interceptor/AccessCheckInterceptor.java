@@ -9,6 +9,9 @@ import com.springbootstudy.common.exception.IllegalUserAccessException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+/**
+ * ログインユーザーにリクエストページへアクセスする権限があるかチェックするInterceptor
+ */
 public class AccessCheckInterceptor implements HandlerInterceptor {
 
 	@Override

@@ -13,6 +13,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.springbootstudy.common.exception.IllegalUserAccessException;
 
+/**
+ * アプリケーション全体のExceptionを処理するクラス
+ */
 @ControllerAdvice
 public class ApplicationControllerAdvice {
 
@@ -24,6 +27,14 @@ public class ApplicationControllerAdvice {
 		this.messageSource = messageSource;
 	}
 
+	/**
+	 * 不正アクセスのエラーメッセージを表示する
+	 * 
+	 * @param e
+	 * @param handler
+	 * @param locale
+	 * @return
+	 */
 	@ExceptionHandler(IllegalUserAccessException.class)
 	@ResponseStatus(HttpStatus.FORBIDDEN)
 	public ModelAndView illegalAccess(Exception e, HandlerMethod handler, Locale locale) {
@@ -32,6 +43,14 @@ public class ApplicationControllerAdvice {
 		return mv;
 	}
 
+	/**
+	 * 個別のエラーメッセージを表示しない場合、すべてこのメソッドで「システムエラー」として表示される。
+	 * 
+	 * @param e
+	 * @param handler
+	 * @param locale
+	 * @return
+	 */
 	@ExceptionHandler(Exception.class)
 	@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
 	public ModelAndView serverError(Exception e, HandlerMethod handler, Locale locale) {
