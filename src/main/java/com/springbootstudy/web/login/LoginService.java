@@ -17,10 +17,6 @@ public class LoginService {
 		this.userRepository = userRepository;
 	}
 
-	public List<User> getAllUsers() {
-		return userRepository.findAll();
-	}
-
 	/**
 	 * ログインIDとパスワードから一致するユーザーを検索する。
 	 * 
