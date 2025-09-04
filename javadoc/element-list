@@ -5,5 +5,7 @@ com.springbootstudy.common.exception
 com.springbootstudy.common.interceptor
 com.springbootstudy.repository.user
 com.springbootstudy.web
+com.springbootstudy.web.admin
+com.springbootstudy.web.admin.users
 com.springbootstudy.web.login
 com.springbootstudy.web.top
