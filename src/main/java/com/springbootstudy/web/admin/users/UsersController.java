@@ -16,7 +16,7 @@ import jakarta.servlet.http.HttpSession;
  * ユーザー管理画面のコントローラー
  */
 @Controller
-@RequestMapping("/users")
+@RequestMapping("admin/users")
 public class UsersController extends AdminController {
 
 	private static final Logger logger = LoggerFactory.getLogger(UsersController.class);
@@ -46,7 +46,7 @@ public class UsersController extends AdminController {
 	}
 
 	private String getViewPath(String path) {
-		return super.getAdminViewPath(path);
+		return super.getAdminViewPath("users/") + path;
 	}
 
 }

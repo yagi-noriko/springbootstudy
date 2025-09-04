@@ -22,7 +22,7 @@ import jakarta.servlet.http.HttpSession;
  * ログイン画面のコントローラー
  */
 @Controller
-@RequestMapping("/login")
+@RequestMapping("login")
 public class LoginController {
 
 	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
