@@ -19,7 +19,7 @@ public class AccessCheckInterceptor implements HandlerInterceptor {
 			throws Exception {
 		LoginInfo info = (LoginInfo) request.getSession().getAttribute(SessionKey.LOGIN_INFO.getKey());
 		if (info == null) {
-			throw new IllegalUserAccessException();
+			throw new IllegalUserAccessException("path=" + request.getPathInfo());
 		}
 		return true;
 	}

@@ -5,4 +5,8 @@ package com.springbootstudy.common.exception;
  */
 public class StudyCommonException extends Exception {
 
+	public StudyCommonException(String message) {
+		super(message);
+	}
+
 }

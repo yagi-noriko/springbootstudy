@@ -6,4 +6,8 @@ package com.springbootstudy.common.exception;
  */
 public class IllegalRequestParamException extends StudyCommonException {
 
+	public IllegalRequestParamException(String message) {
+		super(message);
+	}
+
 }

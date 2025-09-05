@@ -6,4 +6,8 @@ package com.springbootstudy.common.exception;
  */
 public class IllegalUserAccessException extends StudyCommonException {
 
+	public IllegalUserAccessException(String message) {
+		super(message);
+	}
+
 }

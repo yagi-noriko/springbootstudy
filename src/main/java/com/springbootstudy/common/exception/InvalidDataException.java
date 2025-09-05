@@ -6,4 +6,8 @@ package com.springbootstudy.common.exception;
  */
 public class InvalidDataException extends StudyCommonException {
 
+	public InvalidDataException(String message) {
+		super(message);
+	}
+
 }
