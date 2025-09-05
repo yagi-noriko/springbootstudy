@@ -106,10 +106,20 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../repository/user/User.html" title="class in com.springbootstudy.repository.user">User</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getAllActiveUsers()" class="member-name-link">getAllActiveUsers</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="UserForm.html" title="class in com.springbootstudy.web.admin.users">UserForm</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#addOrUpdateUser(com.springbootstudy.web.admin.users.UserForm)" class="member-name-link">addOrUpdateUser</a><wbr>(<a href="UserForm.html" title="class in com.springbootstudy.web.admin.users">UserForm</a>&nbsp;form)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">ユーザーを登録更新する</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="UserForm.html" title="class in com.springbootstudy.web.admin.users">UserForm</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#findAllActiveUsers()" class="member-name-link">findAllActiveUsers</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">アクティブユーザーをすべて取得</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="UserForm.html" title="class in com.springbootstudy.web.admin.users">UserForm</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#findUserById(java.lang.String)" class="member-name-link">findUserById</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;userId)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">userIdからユーザーを取得</div>
 </div>
 </div>
 </div>
@@ -143,12 +153,37 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="getAllActiveUsers()">
-<h3>getAllActiveUsers</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../../repository/user/User.html" title="class in com.springbootstudy.repository.user">User</a>&gt;</span>&nbsp;<span class="element-name">getAllActiveUsers</span>()</div>
+<section class="detail" id="findAllActiveUsers()">
+<h3>findAllActiveUsers</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="UserForm.html" title="class in com.springbootstudy.web.admin.users">UserForm</a>&gt;</span>&nbsp;<span class="element-name">findAllActiveUsers</span>()</div>
 <div class="block">アクティブユーザーをすべて取得</div>
 <dl class="notes">
 <dt>Returns:</dt>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="findUserById(java.lang.String)">
+<h3>findUserById</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="UserForm.html" title="class in com.springbootstudy.web.admin.users">UserForm</a></span>&nbsp;<span class="element-name">findUserById</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;userId)</span></div>
+<div class="block">userIdからユーザーを取得</div>
+<dl class="notes">
+<dt>Returns:</dt>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="addOrUpdateUser(com.springbootstudy.web.admin.users.UserForm)">
+<h3>addOrUpdateUser</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="UserForm.html" title="class in com.springbootstudy.web.admin.users">UserForm</a></span>&nbsp;<span class="element-name">addOrUpdateUser</span><wbr><span class="parameters">(<a href="UserForm.html" title="class in com.springbootstudy.web.admin.users">UserForm</a>&nbsp;form)</span>
+                         throws <span class="exceptions"><a href="../../../common/exception/InvalidDataException.html" title="class in com.springbootstudy.common.exception">InvalidDataException</a></span></div>
+<div class="block">ユーザーを登録更新する</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>form</code> - </dd>
+<dt>Returns:</dt>
+<dt>Throws:</dt>
+<dd><code><a href="../../../common/exception/InvalidDataException.html" title="class in com.springbootstudy.common.exception">InvalidDataException</a></code></dd>
 </dl>
 </section>
 </li>

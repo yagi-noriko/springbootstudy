@@ -111,10 +111,20 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#show(org.springframework.ui.Model)" class="member-name-link">show</a><wbr>(org.springframework.ui.Model&nbsp;model)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#edit(org.springframework.ui.Model,java.lang.String)" class="member-name-link">edit</a><wbr>(org.springframework.ui.Model&nbsp;model,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;userId)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">ユーザー編集表示</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#show(org.springframework.ui.Model)" class="member-name-link">show</a><wbr>(org.springframework.ui.Model&nbsp;model)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">ユーザー一覧表示</div>
 </div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#update(org.springframework.ui.Model,com.springbootstudy.web.admin.users.UserForm)" class="member-name-link">update</a><wbr>(org.springframework.ui.Model&nbsp;model,
+ <a href="UserForm.html" title="class in com.springbootstudy.web.admin.users">UserForm</a>&nbsp;form)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -161,6 +171,36 @@ loadScripts(document, 'script');</script>
 <dt>Parameters:</dt>
 <dd><code>model</code> - </dd>
 <dt>Returns:</dt>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="edit(org.springframework.ui.Model,java.lang.String)">
+<h3>edit</h3>
+<div class="member-signature"><span class="annotations">@GetMapping("edit")
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">edit</span><wbr><span class="parameters">(org.springframework.ui.Model&nbsp;model,
+ @RequestParam(name="userId",required=false)
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;userId)</span></div>
+<div class="block">ユーザー編集表示</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>model</code> - </dd>
+<dd><code>userId</code> - </dd>
+<dt>Returns:</dt>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="update(org.springframework.ui.Model,com.springbootstudy.web.admin.users.UserForm)">
+<h3>update</h3>
+<div class="member-signature"><span class="annotations">@PostMapping("edit")
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">update</span><wbr><span class="parameters">(org.springframework.ui.Model&nbsp;model,
+ @ModelAttribute @Validated
+ <a href="UserForm.html" title="class in com.springbootstudy.web.admin.users">UserForm</a>&nbsp;form)</span>
+              throws <span class="exceptions"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a></span></div>
+<dl class="notes">
+<dt>Throws:</dt>
+<dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a></code></dd>
 </dl>
 </section>
 </li>
